@@ -1,0 +1,219 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mandelbrotCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Keep the fractal background behind the content */
+}
+
+#gameSection, #nicknameSection, #scoreboardSection {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto; /* Ensures the section is centered */
+    max-width: 1000px; /* Increased max width for larger screens */
+    width: 100%; /* Full width for responsiveness */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#game {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+    color: #4CAF50; /* Bright green for accent */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+}
+
+label, input {
+    display: block;
+    margin: 10px auto;
+}
+
+#stopButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#gameOver {
+    color: red;
+    font-size: 20px;
+}
+
+#startRoundButton {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startRoundButton:hover {
+    background-color: #45a049;
+}
+
+/* Styl dla przycisków */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Centering the form containers */
+#nicknameSection, #gameSection {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px; /* More room for the input fields */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Style for the scoreboard table */
+#scoreboard {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#scoreboard th, #scoreboard td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#scoreboard th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+#scoreboard tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#scoreboard tr:hover {
+    background-color: #ddd;
+}
+
+/* Make the input fields in the categories section wider */
+#categories input {
+    width: 260px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+	position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto; /* Ensures the section is centered */
+    max-width: 1000px; /* Increased max width for larger screens */
+    width: 100%; /* Full width for responsiveness */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#categories label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+/* Aligning the Państwo, Miasto, Imię fields in a row */
+#categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#categories div {
+    text-align: left;
+}
+
+/* Round counter styling */
+#roundCounter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 9999;  /* Podwyższony z-index */
+}
+
+
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+    #categories {
+        flex-direction: column;
+    }
+    
+    #nicknameSection, #gameSection {
+        max-width: 90%;
+    }
+
+    #roundCounter {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

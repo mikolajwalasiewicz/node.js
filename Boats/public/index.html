@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship Multiplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Battleship Multiplayer Game</h1>
+
+    <!-- Player Name Input -->
+    <div id="name-container">
+        <input type="text" id="player-name" placeholder="Enter your name" />
+        <button onclick="joinGame()">Join Game</button>
+    </div>
+
+    <!-- Game Boards -->
+    <div id="game-container" class="hidden">
+        <h2 id="player-info"></h2>
+
+        <!-- Two Boards (Player and Opponent) Visible from Start -->
+        <div class="board-container">
+            <!-- Player's Placing Board -->
+            <div class="board-section">
+                <h3>Your Ships</h3>
+                <div id="ship-board" class="board"></div>
+            </div>
+
+            <!-- Opponent's Board for Attacking -->
+            <div class="board-section">
+                <h3>Opponent's Ships</h3>
+                <div id="opponent-board" class="board"></div> <!-- This is the attack board -->
+            </div>
+        </div>
+
+        <!-- Rotate Button -->
+        <button id="rotate-button" onclick="rotateShip()">Rotate Ship</button>
+    </div>
+
+    <!-- Player Stats Table -->
+    <table id="player-stats">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>4-length Ships</th>
+                <th>3-length Ships</th>
+                <th>2-length Ships</th>
+                <th>1-length Ships</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="player1-stats">
+                <td id="player1-name">Waiting...</td>
+                <td id="player1-ship-4">1</td>
+                <td id="player1-ship-3">2</td>
+                <td id="player1-ship-2">3</td>
+                <td id="player1-ship-1">4</td>
+            </tr>
+            <tr id="player2-stats">
+                <td id="player2-name">Waiting...</td>
+                <td id="player2-ship-4">1</td>
+                <td id="player2-ship-3">2</td>
+                <td id="player2-ship-2">3</td>
+                <td id="player2-ship-1">4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 id="turn-indicator"></h3>
+
+    <!-- Socket and Game Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

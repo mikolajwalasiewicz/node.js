@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Państwa, Miasta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="mandelbrotCanvas" width="800" height="600"></canvas>
+
+    <h1>THE GAME</h1>
+
+    <div id="nicknameSection">
+        <label>Wprowadź swój nick:</label>
+        <input type="text" id="nickname">
+        <button id="joinButton">Dołącz do gry</button>
+    </div>
+
+    <div id="gameSection" style="display:none">
+        <p id="selectedLetter">Czekaj na rozpoczęcie rundy...</p>
+        <p id="roundCounter">Runda: 0</p>
+        <p id="timer">Pozostały czas: 60</p>
+        <button id="startRoundButton" style="display:none">Start Rundy</button>
+        <button id="stopButton" style="display:none">STOP</button>
+
+        <div id="categories" style="display:flex; gap: 20px; justify-content: center;">
+            <div>
+                <label>Państwo:</label>
+                <input type="text" id="country">
+            </div>
+            <div>
+                <label>Miasto:</label>
+                <input type="text" id="city">
+            </div>
+            <div>
+                <label>Imię:</label>
+                <input type="text" id="name">
+            </div>
+        </div>
+        <br>
+        <button id="submitAnswersButton">Zatwierdź odpowiedzi</button>
+    </div>
+
+    <div id="scoreboardSection">
+        <h2>Tablica wyników</h2>
+        <table id="scoreboard">
+            <thead>
+                <tr>
+                    <th>Nick</th>
+                    <th>Wynik</th>
+                    <th>Zatwierdzone?</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="gameOver" style="display:none">
+        <h2>Koniec Gry!</h2>
+        <p>Gra zakończona. Pozostało 20 liter.</p>
+    </div>
+    
+    <script src="mandelbrot.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

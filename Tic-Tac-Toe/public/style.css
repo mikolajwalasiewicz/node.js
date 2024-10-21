@@ -1,0 +1,35 @@
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: #ddd;
+}
+
+@keyframes flash {
+  0% { background-color: yellow; }
+  50% { background-color: red; }
+  100% { background-color: yellow; }
+}
+
+.winning-cell {
+  animation: flash 1s infinite;
+  animation-duration: 1s; /* Flash once every second */
+  animation-iteration-count: 10; /* Last for 10 iterations (10 seconds) */
+   animation-delay: 0.5s;
+}

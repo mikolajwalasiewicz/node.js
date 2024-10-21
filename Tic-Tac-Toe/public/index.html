@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Multiplayer</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking to your CSS file -->
+</head>
+<body>
+  <h1>Tic-Tac-Toe Multiplayer</h1>
+  <p>Your mark: <span id="yourMark"></span></p>
+  <p>Current Player: <span id="currentPlayer">X</span></p>
+  <p>Wins - X: <span id="xWins">0</span>, O: <span id="oWins">0</span></p>
+  <div id="board"></div>
+  <p id="message"></p>
+
+  <!-- Include canvas-confetti from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    let yourMark = null;
+
+    // Create the Tic-Tac-Toe board
+    const boardElement = document.getElementById('board');
+    const messageElement = document.getElementById('message');
+    const currentPlayerElement = document.getElementById('currentPlayer');
+    const yourMarkElement = document.getElementById('yourMark');
+    const xWinsElement = document.getElementById('xWins');
+    const oWinsElement = document.getElementById('oWins');
+    const cells = Array(9).fill(null).map((_, i) => {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      cell.addEventListener('click', () => {
+        socket.emit('move', { index: i });
+      });
+      boardElement.appendChild(cell);
+      return cell;
+    });
+
+    // Listen for board updates
+    socket.on('board', (data) => {
+      const { board, currentPlayer, winTracker } = data;
+      currentPlayerElement.innerText = currentPlayer;
+      xWinsElement.innerText = winTracker.X;
+      oWinsElement.innerText = winTracker.O;
+
+      // Update the board
+      board.forEach((mark, i) => {
+        cells[i].innerText = mark;
+        cells[i].classList.remove('winning-cell'); // Clear any previous animations
+      });
+
+      messageElement.innerText = ''; // Clear any previous messages
+    });
+
+    // Listen for the player's assigned mark ('X' or 'O')
+    socket.on('mark', (data) => {
+      yourMark = data.mark;
+      yourMarkElement.innerText = yourMark;
+    });
+
+    // Listen for a win and trigger confetti first, then animation
+    socket.on('win', (data) => {
+      const { winner, winTracker, winningCombination } = data;
+      messageElement.innerText = `${winner} wins!`;
+      xWinsElement.innerText = winTracker.X;
+      oWinsElement.innerText = winTracker.O;
+
+      // Trigger confetti first
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0 }, // Start confetti from the top of the screen
+        gravity: 0.5, // Slows the confetti fall
+        zIndex: 999, // Ensures confetti appears on top of everything
+      });
+
+      // Add a slight delay to the animation of the winning cells
+      setTimeout(() => {
+        winningCombination.forEach(index => {
+          cells[index].classList.add('winning-cell'); // Start glow animation after 0.5s
+        });
+      }, 500); // 0.5s delay before starting the animation
+    });
+
+    // Listen for a draw
+    socket.on('draw', () => {
+      messageElement.innerText = "It's a draw!";
+    });
+
+    // Handle full room
+    socket.on('full', () => {
+      messageElement.innerText = 'Room is full. Wait for another game.';
+    });
+  </script>
+</body>
+</html>

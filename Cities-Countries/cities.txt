@@ -1,0 +1,513 @@
+Moskwa
+Stambuł
+Londyn
+Petersburg
+Berlin
+Madryt
+Kijów
+Rzym
+Bukareszt
+Paryż
+Mińsk
+Wiedeń
+Hamburg
+Budapeszt
+Warszawa
+Barcelona
+Belgrad
+Monachium
+Sofia
+Praga
+Neapol
+Tbilisi
+Sztokholm
+Ryga
+Frankfurt
+Helsinki
+Saloniki
+Amsterdam
+Birmingham
+Dublin
+Kopenhaga
+Zagrzeb
+Bruksela
+Wilno
+Turyn
+Katania
+Marsylia
+Sewilla
+Lipsk
+Lizbona
+Stuttgart
+Essen
+Palermo
+Saragossa
+Dortmund
+Genua
+Drezno
+Duesseldorf
+Lyon
+Dortmund
+Glasgow
+Rotterdam
+Essen
+Gdańsk
+Łódź
+Hanower
+Helsinki
+Walencja
+Palermo
+Tbilisi
+Oslo
+Nicea
+Graz
+Zurych
+Wrocław
+Kłajpeda
+Wilno
+Saloniki
+Burgas
+Lucerna
+Gandawa
+Florencja
+Lozanna
+Ratyzbona
+Salzburg
+Norymberga
+Reykjavik
+Triest
+Bari
+Bazylea
+Malaga
+Bilbao
+Manchester
+Edynburg
+Liverpool
+Poznań
+Królewiec
+Kaliningrad
+Antwerpia
+Brema
+Sofia
+Split
+Malaga
+Bilbao
+Tuluza
+Grenoble
+Sewilla
+Porto
+Kordoba
+Walencja
+Monako
+Dubrownik
+Saragossa
+Reykjavik
+Berno
+Porto
+Tbilisi
+Uppsala
+Wiesbaden
+Heidelberg
+Padwa
+Ljubljana
+Kluż-Napoka
+Ałma Ata
+Ufa
+Woroneż
+Gori
+Tirana
+Ryga
+Tartu
+Szeged
+Lucerna
+Vaduz
+Pecz
+Oradea
+Santander
+Funchal
+Santa Cruz de Tenerife
+Vigo
+Alicante
+Charków
+Kołobrzeg
+Szczecin
+Koszalin
+Zielona Góra
+Toruń
+Olsztyn
+Tarnów
+Rzeszów
+Nowy Sącz
+Krosno
+Słupsk
+Płock
+Ostrołęka
+Legnica
+Grudziądz
+Chorzów
+Opole
+Bytom
+Gliwice
+Zabrze
+Ruda Śląska
+Piekary Śląskie
+Świętochłowice
+Kalisz
+Piła
+Częstochowa
+Radom
+Sosnowiec
+Dąbrowa Górnicza
+Tychy
+Bielsko-Biała
+Jastrzębie-Zdrój
+Mikołów
+Lublin
+Białystok
+Kielce
+Tarnobrzeg
+Sanok
+Puławy
+Stalowa Wola
+Łomża
+Augustów
+Gorzów Wielkopolski
+Nowa Sól
+Gniezno
+Leszno
+Siedlce
+Włocławek
+Chełm
+Zamość
+Świdnica
+Wałbrzych
+Zgierz
+Świnoujście
+Jelenia Góra
+Kołobrzeg
+Legnica
+Suwałki
+Kwidzyn
+Zduńska Wola
+Pabianice
+Skierniewice
+Bydgoszcz
+Tczew
+Środa Wielkopolska
+Oława
+Brzeg
+Żagań
+Kłodzko
+Aleksandrów Kujawski
+Aleksandrów Łódzki
+Alwernia
+Andrychów
+Annopol
+Augustów
+Babimost
+Baranów Sandomierski
+Barcin
+Barlinek
+Bartoszyce
+Będzin
+Bełchatów
+Biała
+Biała Piska
+Biała Podlaska
+Biała Rawska
+Białobrzegi
+Białogard
+Białystok
+Biecz
+Bielawa
+Bielsk Podlaski
+Bielsk
+Bielsko-Biała
+Bierutów
+Bieruń
+Biłgoraj
+Biskupiec
+Bisztynek
+Blachownia
+Błażowa
+Błaszki
+Bobolice
+Bobowa
+Bochnia
+Bodzentyn
+Bolków
+Bolesławiec
+Borek Wielkopolski
+Borne Sulinowo
+Bratian
+Brzeziny
+Brzeg Dolny
+Brzeg
+Brodnica
+Brusy
+Brwinów
+Buk
+Bukowno
+Busko-Zdrój
+Bychawa
+Byczyna
+Bydgoszcz
+Bystrzyca Kłodzka
+Bytom Odrzański
+Bytom
+Chełm
+Chełmek
+Chełmno
+Chełmsko Śląskie
+Chęciny
+Chmielnik
+Chocianów
+Chociwel
+Chodzież
+Chojna
+Chojnów
+Chojnice
+Chorkówka
+Chorzele
+Choszczno
+Chrzanów
+Ciechanów
+Ciechocinek
+Cieszanów
+Cieszyn
+Ciężkowice
+Czarnków
+Czarna Białostocka
+Czarne
+Czchów
+Czechowice-Dziedzice
+Czeladź
+Czempin
+Człopa
+Człuchów
+Czyżew
+Daleszyce
+Darłowo
+Debrzno
+Dębiec
+Dębica
+Dęblin
+Dębno
+Dobczyce
+Dobiegniew
+Dobrzyca
+Dobrzyń nad Wisłą
+Dolsk
+Domaniów
+Drawno
+Drawsko Pomorskie
+Drezdenko
+Drobin
+Dukla
+Duszniki-Zdrój
+Dynów
+Działdowo
+Dzierżoniów
+Elbląg
+Ełk
+Frampol
+Frombork
+Garwolin
+Gdańsk
+Gdynia
+Giżycko
+Glinojeck
+Gliwice
+Głogów
+Głogówek
+Głowno
+Głubczyce
+Głuchołazy
+Gniew
+Gniewkowo
+Gniezno
+Gołańcz
+Goleniów
+Goleszów
+Golina
+Gołdap
+Gorlice
+Gorzów Wielkopolski
+Gostynin
+Gostyń
+Gozdnica
+Grabów nad Prosną
+Grajewo
+Grodzisk Mazowiecki
+Grodzisk Wielkopolski
+Grójec
+Grudziądz
+Grybów
+Gryfice
+Gryfino
+Grywałd
+Gubin
+Hajnówka
+Halinów
+Hel
+Hrubieszów
+Iława
+Iłża
+Imielin
+Inowrocław
+Ińsko
+Izbica Kujawska
+Jabłonowo Pomorskie
+Jaczków
+Jasień
+Jasło
+Jastarnia
+Jastrzębie-Zdrój
+Jawor
+Jaworzno
+Jaworzyna Śląska
+Jedlicze
+Jedlina-Zdrój
+Jedwabne
+Jelenia Góra
+Jutrosin
+Kalisz Pomorski
+Kalisz
+Kalwaria Zebrzydowska
+Kamienna Góra
+Kamień Krajeński
+Kamień Pomorski
+Kamieńsk
+Karczew
+Kargowa
+Karlino
+Karpacz
+Kartuzy
+Katowice
+Kazimierz Dolny
+Kazimierza Wielka
+Kąty Wrocławskie
+Kcynia
+Kędzierzyn-Koźle
+Kępice
+Kępno
+Kętrzyn
+Kiełczów
+Kielce
+Kietrz
+Klimontów
+Kłobuck
+Kłodawa
+Kłodzko
+Knurów
+Kobylin
+Kobyłka
+Kock
+Kolbuszowa
+Kolno
+Kolonowskie
+Koło
+Kołobrzeg
+Konin
+Końskie
+Korsze
+Koszalin
+Kowal
+Kowalewo Pomorskie
+Kozienice
+Koziegłowy
+Koźmin Wielkopolski
+Kożuchów
+Kraków
+Krasnobród
+Krasnystaw
+Kraśnik
+Krobi
+Krosno Odrzańskie
+Krosno
+Krynica-Zdrój
+Krynki
+Krynica Morska
+Krzanowice
+Krzeszowice
+Krzywiń
+Krzyż Wielkopolski
+Kudowa-Zdrój
+Kunów
+Kutno
+Kwidzyn
+Lądek-Zdrój
+Legionowo
+Lesko
+Leszno
+Leśna
+Leżajsk
+Libiąż
+Lidzbark Warmiński
+Lidzbark
+Limanowa
+Lipiany
+Lipsk
+Lubaczów
+Lubartów
+Lubawka
+Lubień Kujawski
+Lubin
+Lublin
+Lubliniec
+Lubniewice
+Luboń
+Lubraniec
+Lubsko
+Lubycza Królewska
+Lwówek Śląski
+Łabiszyn
+Łańcut
+Łapy
+Łask
+Łasin
+Łaszczów
+Łaziska Górne
+Łazy
+Łeba
+Łęczna
+Łęczyca
+Łobez
+Łomianki
+Łomża
+Łosice
+Łowicz
+Łuków
+Maków Mazowiecki
+Maków Podhalański
+Malbork
+Małogoszcz
+Małomice
+Margonin
+Marki
+Maszewo
+Miasteczko Śląskie
+Miastko
+Michałowo
+Miechów
+Miejska Górka
+Mielec
+Międzybórz
+Międzychód
+Międzylesie
+Międzyrzec Podlaski
+Międzyrzecz
+Międzyzdroje
+Mikołów
+Milicz
+Miłakowo
+Miłom
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1, h3 {
+    margin-bottom: 20px;
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.cell.ship {
+    background-color: green;
+}
+
+.cell.hit {
+    background-color: red;
+}
+
+.cell.miss {
+    background-color: gray;
+}
+
+.cell.hover-ship {
+    background-color: yellow; /* Highlight cells on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#rotate-button {
+    margin-top: 10px;
+}
+
+.hit {
+    background-color: red;
+}
+
+.miss {
+    background-color: gray;
+}
+/* Add hover effect for placing ships */
+.hover-ship {
+    background-color: rgba(0, 255, 0, 0.5); /* Light green to indicate ship placement */
+    border: 1px solid green;
+}
+
+.miss {
+    background-color: rgba(128, 128, 128, 0.5); /* Light gray to indicate a miss */
+    border: 1px solid gray;
+}
